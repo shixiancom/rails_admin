@@ -45,7 +45,7 @@ module RailsAdmin
           register_instance_option :datepicker_options do
             {
               showTodayButton: true,
-              format: parser.to_momentjs,
+              format: "yyyy-mm-dd hh:ii",
             }
           end
 
