@@ -107,7 +107,7 @@
       $('#filters_box').append($content);
 
       $content.find('.date, .datetime').datetimepicker({
-        locale: RailsAdmin.I18n.locale,
+        locale: "en",
         showTodayButton: true,
         format: options['datetimepicker_format']
       });
@@ -126,7 +126,7 @@
       operator: $(this).data('field-operator'),
       select_options: $(this).data('field-options'),
       index: $.now().toString().slice(6,11),
-      datetimepicker_format: $(this).data('field-datetimepicker-format')
+      datetimepicker_format: "yyyy-mm-dd hh:ii"
     });
   });
 
